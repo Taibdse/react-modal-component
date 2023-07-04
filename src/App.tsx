@@ -19,7 +19,7 @@ function App() {
       content: <h3>Content will be changed after 2 seconds</h3>
     });
     setTimeout(() => {
-      instance.update({ open: true, content: <h3>Content changed!!</h3> })
+      instance.update({ content: <h3>Content changed!!</h3> })
     }, 2000);
   }
 

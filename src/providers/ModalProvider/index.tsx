@@ -1,4 +1,4 @@
-import React, { useContext, useState, ReactNode, useMemo, useEffect, useRef } from 'react';
+import React, { useContext, useState, ReactNode, useMemo, useRef } from 'react';
 import Modal, { ModalProps } from '../../components/Modal';
 
 export interface IModalInstance {
@@ -72,7 +72,7 @@ export default function ModalProvider(props: { children: ReactNode }) {
   }
 
   // const value = useMemo(() => ({ create, update, destroy, close, open }), [modals, updateModalInstance]);
-  const value = { create, destroyAll };
+  const value = useMemo(() => ({ create, destroyAll }), [modals, modalsRef.current]);
 
   return (
     <ModalContext.Provider value={value}>

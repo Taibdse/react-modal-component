@@ -1,4 +1,4 @@
-import { CSSProperties, ReactNode, useEffect, useState, forwardRef } from 'react';
+import { CSSProperties, ReactNode, useEffect, useState } from 'react';
 import styles from './styles.module.css';
 import { RiCloseLine } from "react-icons/ri";
 import { createPortal } from 'react-dom';
@@ -8,7 +8,7 @@ export interface ModalProps {
   afterClose?: Function;
   onCancel?: Function;
   onOk?: Function;
-  open: boolean;
+  open?: boolean;
   title?: ReactNode;
   cancelText?: ReactNode;
   centered?: boolean;
@@ -88,10 +88,6 @@ function Modal(props: ModalProps) {
 
   const handleClickOkButton = (e: any) => {
     if (onOk) onOk(e);
-  }
-
-  const destroy = () => {
-    setVisible(false);
   }
 
   useEffect(() => {
