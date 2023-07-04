@@ -2,6 +2,8 @@
 
 This project is to build modal component
 
+Link preview: https://react-modal-component-zfgt.vercel.app/
+
 # Techstack
 * ReactJS 
 * Typescript
@@ -44,3 +46,28 @@ npm run test:ui
 ```
 npm run coverage
 ```
+
+
+# Deployment
+**Deploy application**
+
+Using the **vercel** platform to deploy.
+https://react-modal-component-zfgt.vercel.app/
+
+
+
+# Usage
+At the very fitst time access the application domain, we can see 3 buttons
+* Show modal () 
+* Typescript
+* React-transition-group
+
+# Implementation
+- Implement modal component
+- Implement modal provider to control all modals inside application
+- Accessibility
+- Animation
+- Test: unit test, test coverage
+
+# Troubleshooting
+NA
