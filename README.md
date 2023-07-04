@@ -1,6 +1,6 @@
 # Introduction
 
-This project is to build modal component
+This project is to build modal component by Bui Duc Tai
 
 Link preview: https://react-modal-component-zfgt.vercel.app/
 
